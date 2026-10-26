@@ -17,12 +17,12 @@ The client ID and client secret is from the API key we create within the Falcon 
 
 
 - 2. Use CrowdStrike docs to identify what is url and parameters to retrieve our list of IDs for all of suppression rules.
-  3. The URL we will use is https://api.crowdstrike.com/cloud-policies/queries/suppression-rules/v1 to retrieve all the rule IDs.
+  - - URL we will use is https://api.crowdstrike.com/cloud-policies/queries/suppression-rules/v1 to retrieve all the rule IDs.
  
   <img width="777" height="897" alt="image" src="https://github.com/user-attachments/assets/3745d909-af0c-447a-b2fa-1025be639002" />
 
 - 2. We want to know what is the suppression rule with ID = 4a353957-425a-4d4f-bfdf-fa6828185ae2
-    https://api.crowdstrike.com/cloud-policies/entities/suppression-rules/v1?ids=4a353957-425a-4d4f-bfdf-fa6828185ae2
+  - - URL we will use is https://api.crowdstrike.com/cloud-policies/entities/suppression-rules/v1?ids=4a353957-425a-4d4f-bfdf-fa6828185ae2
 
 <img width="1100" height="938" alt="image" src="https://github.com/user-attachments/assets/0ae230d1-4b97-4b9a-a79c-bf5a20100fe2" />
 
@@ -32,7 +32,8 @@ The client ID and client secret is from the API key we create within the Falcon 
 Name: Azure Virtual Machine does not have Trusted Launch enabled - Part 2
 Rule ID: 4a353957-425a-4d4f-bfdf-fa6828185ae2
 
-PATCH request to https://api.crowdstrike.com/cloud-policies/entities/suppression-rules/v1?ids=4a353957-425a-4d4f-bfdf-fa6828185ae2
+PATCH request to:
+URL: https://api.crowdstrike.com/cloud-policies/entities/suppression-rules/v1?ids=4a353957-425a-4d4f-bfdf-fa6828185ae2
 
 
 <img width="1151" height="900" alt="image" src="https://github.com/user-attachments/assets/53b15854-0561-43ce-9a49-6838d801eb94" />
