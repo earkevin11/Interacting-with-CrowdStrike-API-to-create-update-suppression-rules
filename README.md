@@ -29,21 +29,21 @@ The client ID and client secret is from the API key we create within the Falcon 
 
 
 ## 3. PATCH request to add our assets to this suppression rule:
-Name: Azure Virtual Machine does not have Trusted Launch enabled - Part 2
-Rule ID: 4a353957-425a-4d4f-bfdf-fa6828185ae2
+- Name: Azure Virtual Machine does not have Trusted Launch enabled - Part 2
+- Rule ID: 4a353957-425a-4d4f-bfdf-fa6828185ae2
+- Benefit: I do not have to add each resource ID manually in the UI. This took me about 5 minutes to retrieve a token, format the body, and populate the resources into the rule. It would've taken hours or days if I had manually add 204 resources into the rule.
 
 PATCH request to:
 URL: https://api.crowdstrike.com/cloud-policies/entities/suppression-rules/v1?ids=4a353957-425a-4d4f-bfdf-fa6828185ae2
-Benefit: I do not have to add each resource ID manually in the UI. This took me about 5 minutes to retrieve a token, format the body, and populate the resources into the rule
 
 <img width="1151" height="900" alt="image" src="https://github.com/user-attachments/assets/53b15854-0561-43ce-9a49-6838d801eb94" />
 
 
 
 ## 4. PATCH request to add our assets to a new suppression rule
-Name: Azure private endpoints is not in a subnet with a network security group - Part 2
-Rule ID: 4042a347-0f43-439e-ad2b-53e78271d5b6
-Benefit: I do not have to add each resource ID manually in the UI. This took me about 5 minutes to retrieve a token, format the body, and populate the resources into the rule. It would've taken hours or days if I had manually add 204 resources into the rule.
+- Name: Azure private endpoints is not in a subnet with a network security group - Part 2
+- Rule ID: 4042a347-0f43-439e-ad2b-53e78271d5b6
+- Benefit: I do not have to add each resource ID manually in the UI. This took me about 5 minutes to retrieve a token, format the body, and populate the resources into the rule. It would've taken hours or days if I had manually add 204 resources into the rule.
 
 <img width="1121" height="928" alt="image" src="https://github.com/user-attachments/assets/17fc5c54-60ef-4e9e-9c4d-e5979bad25eb" />
 
